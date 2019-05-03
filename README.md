@@ -1,4 +1,4 @@
-# iwealth
+# Vue Table Demo
 
 ## Project setup
 ```
