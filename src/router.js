@@ -1,23 +1,48 @@
 import Vue from 'vue'
+import APImode from '@/components/APImode'
+import CustomizeField from '@/components/CustomizeField'
+import DataMode from '@/components/DataMode'
+import Pagination from '@/components/Pagination'
+import Sorting from '@/components/Sorting'
+import SpecialField from '@/components/SpecialField'
+
+
 import Router from 'vue-router'
-import Home from './views/Home.vue'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: Home
+      path: '/APImode',
+      name: 'API Mode',
+      component: APImode
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    }
+      path: '/CustomizeField',
+      name: 'Customize Field',
+      component: CustomizeField
+    },
+    {
+      path: '/DataMode',
+      name: 'Data Mode',
+      component: DataMode
+    },
+    {
+      path: '/Pagination',
+      name: 'Pagination',
+      component: Pagination
+    },
+    {
+      path: '/Sorting',
+      name: 'Sorting',
+      component: Sorting
+    },
+    {
+      path: '/SpecialField',
+      name: 'Special Field',
+      component: SpecialField
+    },
+
   ]
 })
