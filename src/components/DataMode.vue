@@ -1,16 +1,14 @@
 <template>
   <div id="app">
       <b-container>
-    <br>
    <h1> Vue Table in Data Mode</h1>
-    <p>Fetches data from this <a href="https://vuetable.ratiw.net/api/users">endpoint</a> </p>
+    <p>Fetches data from Local JSON file (or) this <a href="https://vuetable.ratiw.net/api/users">endpoint</a> </p>
     <vuetable
       ref="vuetable"
       :api-mode="false"
       :fields="fields"
       :data="data"
-    >
-    </vuetable>
+    />
       </b-container>
   </div>
 </template>
@@ -18,6 +16,7 @@
 <script>
 import Vuetable from "vuetable-2";
 import FieldDef from "@/components/DataSource/FieldDef.js";
+import sampleData from '@/components/DataSource/SampleData.json'
 import axios from "axios";
 
 export default {
@@ -30,7 +29,8 @@ export default {
   data() {
     return {
       fields: FieldDef,
-      data: []
+      data: [],
+    //   data: sampleData,
     };
   },
 

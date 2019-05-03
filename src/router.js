@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import APImode from '@/components/APImode'
-import CustomizeField from '@/components/CustomizeField'
+import Home from '@/components/Home'
+import FormatField from '@/components/FormatField'
 import DataMode from '@/components/DataMode'
-import Pagination from '@/components/Pagination'
 import Sorting from '@/components/Sorting'
 import SpecialField from '@/components/SpecialField'
 
@@ -13,25 +13,26 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
+    { path: '/', redirect: '/Home' },
+    {
+      path: '/Home',
+      name: 'Home',
+      component: Home
+    },
     {
       path: '/APImode',
       name: 'API Mode',
       component: APImode
     },
     {
-      path: '/CustomizeField',
-      name: 'Customize Field',
-      component: CustomizeField
+      path: '/FormatField',
+      name: 'Format Field',
+      component: FormatField
     },
     {
       path: '/DataMode',
       name: 'Data Mode',
       component: DataMode
-    },
-    {
-      path: '/Pagination',
-      name: 'Pagination',
-      component: Pagination
     },
     {
       path: '/Sorting',

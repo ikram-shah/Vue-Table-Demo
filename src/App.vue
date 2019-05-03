@@ -2,6 +2,10 @@
   <div id="app">
   
      <b-nav tabs align="center">
+         <b-nav-item active-class="active">
+         <router-link class="nav-item" to="/Home">Home</router-link>
+      </b-nav-item>
+
       <b-nav-item active-class="active">
          <router-link class="nav-item" to="/apiMode">API Mode</router-link>
       </b-nav-item>
@@ -11,7 +15,7 @@
       </b-nav-item>
 
        <b-nav-item active-class="active">
-         <router-link class="nav-item" to="/CustomizeField">Customize Field</router-link>
+         <router-link class="nav-item" to="/FormatField">Format Field</router-link>
       </b-nav-item>
 
       <b-nav-item active-class="active">
@@ -22,9 +26,6 @@
          <router-link class="nav-item" to="/Sorting">Sorting</router-link>
       </b-nav-item>
 
-      <b-nav-item active-class="active">
-         <router-link class="nav-item" to="/Pagination">Pagination</router-link>
-      </b-nav-item>
     </b-nav>
     <router-view/>
   </div>
