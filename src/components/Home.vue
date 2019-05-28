@@ -51,13 +51,13 @@
 <p> Thank you <a class="twt" href="https://twitter.com/znck0">@Rahul</a> & <a class="twt" href="https://twitter.com/SwapAgarwal">@Swapnil</a> for organizing this wonderful conference. It was a great experience and learning </p>
 
 
-      <b-container class="row text-center" fluid >
-        <Tweet class="col-4" id="1124623360787238913"></Tweet>
-          <Tweet class="col-4" id="1124624771969196032"></Tweet>
-         <Tweet class="col-4" id="1124650843800621056"></Tweet>
+      <div class="row text-center"  >
+        <Tweet class="col-lg-4 col-sm-6" id="1124623360787238913"></Tweet>
+          <Tweet class="col-lg-4 col-sm-6" id="1124624771969196032"></Tweet>
+         <Tweet class="col-lg-4 col-sm-6" id="1124650843800621056"></Tweet>
         
     
-      </b-container>
+      </div>
     </b-jumbotron>
   </div>
 </template>
